@@ -12,13 +12,12 @@ for tc in range(1, T+1):
     cnt = 0
     while i < len(a):
         # i,j는 시작점에 대한 것!
-        if i >
         if a_lst[i] == b_lst[j]:    # a[i]를 돌다가 b[0]이랑
             n_i = i + 1             # 일치하는게 있으면 i, j하나씩 늘려서 다음도 일치하나 확인
             n_j = j + 1
             while n_j < len(b):     # b가 다 끝날때까지 확인
-                if n_i > len(a):
-                    cnt += (n_j + 1)
+                if n_i >= len(a):
+                    cnt += n_j
                     i = n_i
                     break
                 if a_lst[n_i] == b_lst[n_j]:
