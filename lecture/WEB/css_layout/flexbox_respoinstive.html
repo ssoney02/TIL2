@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card {
+      width: 80%;
+      border: 1px solid black;
+      /* 1 */
+      display: flex;
+      /* 2 */
+      /* 넘치지 않게! */
+      flex-wrap: wrap;
+    }
+
+    img {
+      /* 그림이 항상 부모너비의 100%를 채우고 있음 -> 밑에 content가 올라올 수가 없음 */
+      width: 100%;
+    }
+
+    .thumbnail {
+      /* 3 */
+      /* flex 선언됐을 때 기본 값을 줌 -> 남는 영역이 생겨버림림 */
+      flex-basis: 700px;
+      /* 4 */
+      /* 남는 영역을 분배하면 됨  */
+      flex-grow: 1;
+    }
+
+    .content {
+      /* 3 */
+      flex-basis: 350px;
+      /* 4 */
+      /* content랑 thumbnail에 균등하게 나눠줌줌 */
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img class="thumbnail" src="images/sample.jpg" alt="sample">
+    <div class="content">
+      <h2>Heading</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus sed expedita ut nihil tempora
+        neque autem odio eos, repudiandae blanditiis, molestiae consequatur. Adipisci illo dolor repellat alias
+        maiores.
+        Aut?</p>
+    </div>
+  </div>
+</body>
+
+</html>

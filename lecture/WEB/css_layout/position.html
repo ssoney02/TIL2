@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 1500px;
+    }
+
+    .container {
+      /* position: relative; */
+      height: 300px;
+      width: 300px;
+      border: 1px solid black;
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+    }
+
+    .static {
+      /* position: static; */
+      background-color: lightcoral;
+    }
+
+    .absolute {
+        /* normal flow에서 완벽히 벗어남 (본인의 위치를 버림) */
+      /* relative도 같이 움직임..  */
+      /* position: absolute; */
+      background-color: lightgreen;
+      top: 100px;
+      left: 100px;
+    }
+
+    .relative {
+      /* 아래 주석을 풀면 top 100, left 100이 동작함 */
+      /* position: relative; */
+      /* 본인의 static일때의 위치가 relative의 이동 기준 위치 */
+      /* normal flow에서 완벽히 벗어난건 x */
+      background-color: lightblue;
+      /* top 100 -> 얘의 궁극적인 이동방향은 아래임!!! 이동하는 방향이 아니라 영역을 주는 방향!(위에 영역을 주니까 아래로 이동함함) */
+      top: 100px;
+      left: 100px;
+    }
+
+    .fixed {
+      /* 어디다 박아두는 것.. */
+      /* position: fixed; */
+      background-color: gray;
+      /* 윗쪽 영역, 오른쪽 영역 제거해버림 (화면의 우측 상단에 붙음!) 화면 기준으로 이 위치에 고정 -> 스크롤 내려도 고정됨됨 */
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 네 가지의 태그를 다 자식 태그로 가지는데, block이다 보니까 마지막 태그가 자식태그에서 탈출해버림.... -->
+    <div class="box static">Static</div>
+    <div class="box absolute">Absolute</div>
+    <div class="box relative">Relative</div>
+    <div class="box fixed">Fixed</div>
+  </div>
+</body>
+
+</html>
