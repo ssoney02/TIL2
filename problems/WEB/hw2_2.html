@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card {
+      width: 60%;
+      border: 1px solid black;
+      /* 1 */
+      /* display: flex; */
+      /* 2 */
+      /* 넘치지 않게! */
+      flex-wrap: wrap;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .thumbnail {
+      position: relative;
+      /* width: 100%; */
+    }
+
+    img{
+      
+      width: 100%;
+      
+    }
+    
+    .content{
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      /* vertical-align: text-bottom; */
+      bottom: 0;
+      z-index: 3;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 0;
+      /* flex-grow: 1; */
+      /* background-color: rgba(201, 163, 81, 0.7) ; */
+    }
+
+    .box {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 50px;
+      padding: 3px;
+
+      z-index: 2;
+      background-color: rgba(240, 195, 97, 0.7) ;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class = "card-content">
+      <img src="profile.jpg" alt="Profile Image">
+      <div class="thumbnail">
+        
+        <!-- name(content)의 부모가 img여야됨 -->
+        
+        <div class = "box">
+          
+        </div>  
+        <div class="content">
+          <!-- img의 자식태그로 name을 넘김김 -->
+          <p>Name</p>
+        </div>
+        
+      </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde officiis ad nostrum. Laboriosam mollitia similique provident fuga tenetur saepe sit, amet eaque neque eius quaerat expedita ea illum veniam.</p>
+
+      
+    </div>
+  </div>
+</body>
+</html>
