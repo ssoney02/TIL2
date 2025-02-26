@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer-box {
+      display: flex;
+      justify-content: space-between;
+      border: black 1px dotted ;
+      height: 200px;
+      width: 600px;
+    }
+
+    .inner-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: red 1px solid;
+      height: 200px;
+      width: 300px;
+      /* justify-content는 콘텐츠 항목 사이와 주위에 공간을 분배하는 방법 -> 공간을 분배할 것에 정의해야됨 */
+      justify-content: space-between;
+    }
+
+    .box {
+      
+      height: 100px;
+      width: 100px;
+      background-color: skyblue;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+    <div class="inner-box">
+      <!-- <div class ="grid gap-0 column-gap-3"> -->
+
+      <div class="box">item1</div>
+      <div class="box">item2</div>
+
+      <!-- </div> -->
+      
+    </div>
+  </div>
+
+</body>
+</html>
