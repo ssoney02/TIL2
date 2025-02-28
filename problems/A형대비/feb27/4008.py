@@ -8,6 +8,8 @@ for tc in range(1, T+1):
     counts = list(map(int, input().split()))   # 순서대로 +,-,*,/ 개수
     numbers = list(map(int, input().split()))
     # copy_numbers = copy.deepcopy(numbers)
+
+
     n_counts = []
     for i in range(len(counts)):
         for j in range(counts[i]):
@@ -20,8 +22,11 @@ for tc in range(1, T+1):
         # print(perm)
         top1 = -1
         top2 = 0
-        copy_numbers = copy.deepcopy(numbers)
+        copy_numbers = []
+        for n in numbers:
+            copy_numbers.append(n)
         # print(copy_numbers)
+
         while top1 <= len(copy_numbers)-3:
             top1 += 1
             op1 = copy_numbers[top1]
@@ -37,7 +42,9 @@ for tc in range(1, T+1):
             elif perm[top2] == 2:
                 copy_numbers[top1] = op1 * op2
             elif perm[top2] == 3:
-                copy_numbers[top1] = math.trunc(op1 / op2)
+                # if op1 < 0:
+                #     -(-op1 // op2)
+                copy_numbers[top1] = int(op1 / op2)
             top2 += 1
             top1 -= 1
         ans.append(copy_numbers[-1])
