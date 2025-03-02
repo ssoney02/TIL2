@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa2f7556-624e-463a-9f9a-488fd1d6d7c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/problems/A형대비/mar01/1949input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problems/A형대비/feb28/4008_dfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/problems/A형대비/feb28/4008_dfs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problems/A형대비/mar01/1949_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/problems/A형대비/mar01/1949_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,7 @@
       <recent name="$PROJECT_DIR$/problems/A형대비/mar01" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.1949">
+  <component name="RunManager" selected="Python.1949_2">
     <configuration name="1949" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,8 +138,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.1949" />
         <item itemvalue="Python.1949_2" />
+        <item itemvalue="Python.1949" />
         <item itemvalue="Python.targetnum_programmers" />
         <item itemvalue="Python.4008_dfs" />
         <item itemvalue="Python.4008" />
@@ -215,13 +214,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/problems/A형대비/mar01/1949_2.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="10" />
+          <line>13</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/problems/A형대비/mar01/1949_2.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="11" />
+          <line>70</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -229,7 +228,12 @@
       <configuration name="PythonConfigurationType">
         <watch expression="ans" language="Python" />
         <watch expression="mountain[oi][oj]" language="Python" />
+        <watch expression="oi1" />
+        <watch expression="max_cnt" language="Python" />
         <watch expression="visited" language="Python" />
+        <watch expression="mountain" language="Python" />
+        <watch expression="tmp_m" language="Python" />
+        <watch expression="cnt" language="Python" />
       </configuration>
     </watches-manager>
   </component>
