@@ -11,11 +11,28 @@ pipe = {1: [0, 1, 2, 3], # 상우하좌
         7: [0, 1]}  #상좌
 
 # 받아 줄 수 있는 파이프 체크
-def check_pipe(oi, oj, ni, nj):
+def check_pipe(oi, oj, ni, nj, tmp_k):
     # global flag
     flag = False
-    for val in pipe[tunnel_map[oi][oj]]:
-        if (3 - val) in pipe[tunnel_map[ni][nj]]:
+    if tunnel_map[oi][oj] == 1:
+        if tunnel_map[ni][nj] == 1:
+            flag = True
+        else:
+            if tmp_k == 0:
+                if tunnel_map[ni][nj] in [2,5,6]:
+                    flag = True
+            elif tmp_k == 1:#좌
+                if tunnel_map[ni][nj] in [3, 4 ,5]:
+                    flag = True
+            elif tmp_k == 2: # 우
+                if tunnel_map[ni][nj] in [3, 6, 7]:
+                    flag = True
+            else:
+                if tunnel_map[ni][nj] in [2, 4, 7]:
+                    flag = True
+
+    else:
+        if (3 - tmp_k) in pipe[tunnel_map[ni][nj]]:
             flag = True
             return flag
     return flag
@@ -34,7 +51,7 @@ def find_thief(si, sj):
         for k in pipe[tunnel_map[t[0]][t[1]]]:  # 갈 수 있는 모든 방향에 대해
             ni, nj = t[0] + delta[k][0], t[1] + delta[k][1]
             if 0 <= ni < N and 0 <= nj < M and tunnel_map[ni][nj] != 0 and visited[ni][nj] == 0:
-                flag = check_pipe(t[0], t[1], ni, nj)
+                flag = check_pipe(t[0], t[1], ni, nj, k)
                 if flag == True:    # 진행 가능 하면
                     q.append([ni, nj])
                     visited[ni][nj] = visited[t[0]][t[1]] + 1
@@ -56,8 +73,8 @@ for tc in range(1, T+1):
     # print(visited)
     # si, sj = C, L
     find_thief(R, C)
-    for v in visited:
-        print(v)
+    # for v in visited:
+    #     print(v)
     ans = N*M
     for v in visited:
         ans -= v.count(0)
