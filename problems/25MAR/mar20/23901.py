@@ -5,7 +5,7 @@ delta = [[-1, 0], [0, 1], [1, 0], [0, -1]]
 
 def dijkstra(i, j):
     pq = [(0, i, j)]  # 누적 연료, i, j
-    fuels = [[INF] * N for _ in range(N)]
+    fuels = [[float('inf')] * N for _ in range(N)]
     fuels[i][j] = 0
     # 종료조건: 목적지 도달하면
 
@@ -20,7 +20,10 @@ def dijkstra(i, j):
             ni, nj = oi + d[0], oj + d[1]
 
             if 0 <= ni < N and 0 <= nj < N:  # 이동 가능 조건
-                next_fuel = fuel + (location[ni][nj] - location[oi][oj]) + 1
+                if location[ni][nj] > location[oi][oj]:
+                    next_fuel = fuel + (location[ni][nj] - location[oi][oj]) + 1
+                else:
+                    next_fuel = fuel + 1
 
                 if fuels[ni][nj] <= next_fuel:
                     continue
@@ -29,7 +32,7 @@ def dijkstra(i, j):
                 heapq.heappush(pq, (next_fuel, ni, nj))
 
     return fuels[-1][-1]
-INF = int(21e8)
+
 
 T = int(input())
 for tc in range(1, T + 1):
