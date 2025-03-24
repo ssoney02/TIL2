@@ -1,0 +1,18 @@
+# Python 가상환경
+**/venv/
+
+# pycache
+__pycache__/
+*.py[cod]
+
+# Django migrations
+**/migrations/
+!*/migrations/__init__.py
+
+# 기타
+*.log
+*.sqlite3
+*.env
+
+# VSCode 설정
+.vscode/
