@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>EDIT</h1>
+  <form action="{% url "articles:update" article.pk %}" method="POST">
+    {% csrf_token %}
+    <div>
+      <label for="title">Title: </label>
+      {% comment %} 기존 데이터가 뜰 수 있도록 {% endcomment %}
+      <input type="text" name="title" id="title" value="{{ article.title }}">  
+    </div>
+    <div>
+      <label for="content">Content: </label>
+      {% comment %} textarea는 value라는 속성이 없음.. -> 태그 안에다 직접 써야됨 {% endcomment %}
+      <textarea name="content" id="content">{{ article.content }}</textarea>
+    </div>
+    <input type="submit">
+  </form>
+  <hr>
+  <a href="">[back]</a>
+</body>
+</html>
