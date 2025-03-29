@@ -15,7 +15,7 @@ def make_set(n):
 #
 #     # x의 부모노드를 기준으로 다시 대표자를 검색
 #     return find_set(parents[x])
-
+#
 # # 경로 압축 추가
 # def find_set(x):
 #     if parents[x] == x:
