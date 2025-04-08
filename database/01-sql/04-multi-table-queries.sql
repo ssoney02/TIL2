@@ -39,5 +39,25 @@ VALUES
 
 
 -- INNER JOIN
+-- 1단계. 두 테이블 결합 후 조건에 만족하는 모든 필드 조회
+-- 작성자가 존재하는 모든 게시글을 출력
+-- 2단계. 최종 출력 필드에 맞게 title과 name만 조회
+-- SELECT title, name해도 필드이름이 겹치지 않아서 잘 조회되긴 함 but.. 권장x 명시적으로!!
+SELECT articles.title, users.name
+FROM articles
+INNER JOIN users
+  ON users.id = articles."userId"
+-- 3단계. 1번 작성자가 작성한 게시글만 조회
+WHERE "userId" = 1;
+
+
 
 -- LEFT JOIN
+-- 1단계. 모든 유저 정보 출력 + 이 유저들이 작성한 게시글 정보까지
+SELECT articles.name
+FROM users
+LEFT JOIN articles
+  ON articles."userId" = users.id
+-- 2단계. 1단계 결과에서 결국 article 정보가 NUll 사용자가 게시글을 작성한 적이 없는 사용자다!
+WHERE articles."userId" IS NULL;
+--  3단계. 2단계 출력에서 문제 요구사항에 맞게 사용자 이름만 출력
