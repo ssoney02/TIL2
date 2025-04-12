@@ -1,3 +1,5 @@
+### DB 구조 파악 먼저 잘 하기
+관계 / 구조 / 등등 
 
 ### url
 url 통일이 필요해보임
@@ -17,6 +19,7 @@ url 통일이 필요해보임
 ```py
 company_name = request.GET.get('stock_name', '').strip().lower()
 ```
+
 
 
 <hr>
