@@ -17,3 +17,4 @@ __pycache__/
 # VSCode 설정
 .vscode/
 
+.idea/
