@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,django,python,venv,visualstudiocode,pycharm,vuejs
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,django,python,venv,visualstudiocode,pycharm,vuejs
+# Created by https://www.toptal.com/developers/gitignore/api/django
+# Edit at https://www.toptal.com/developers/gitignore?templates=django
 
 ### Django ###
 *.log
@@ -475,5 +475,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,django,python,venv,visualstudiocode,pycharm,vuejs
-=======
-.idea/
