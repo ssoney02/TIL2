@@ -1,0 +1,35 @@
+[
+{
+    "model": "articles.comment",
+    "pk": 1,
+    "fields": {
+        "article": 1,
+        "user": 3,
+        "content": "æ∆æ∆æ∆",
+        "created_at": "2025-04-15T05:56:51.688Z",
+        "updated_at": "2025-04-15T05:56:51.688Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 2,
+    "fields": {
+        "article": 2,
+        "user": 3,
+        "content": "«·π«¥Ÿ«œ§”§ß§±»Â§ø¡ˆ",
+        "created_at": "2025-04-15T05:56:56.215Z",
+        "updated_at": "2025-04-15T05:56:56.215Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 3,
+    "fields": {
+        "article": 3,
+        "user": 3,
+        "content": "§∏§ßµÂêYµÈæÓ∏™∑∑",
+        "created_at": "2025-04-15T05:57:03.946Z",
+        "updated_at": "2025-04-15T05:57:03.946Z"
+    }
+}
+]

@@ -126,7 +126,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = 'accounts.User'
 
-# toolbar
+# toolbar -> 얘 때문에 runserver하면 옆에 toolbar 뜨는 것!
 if DEBUG:
     INTERNAL_IPS = ['127.0.0.1', ] 
 

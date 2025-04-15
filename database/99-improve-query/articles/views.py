@@ -6,6 +6,7 @@ from django.db.models import Count
 # Create your views here.
 def index_1(request):
     articles = Article.objects.order_by('-pk')
+    # - 붙으면 내림차순을 의미!
     # articles = Article.objects.annotate(Count('comment')).order_by('-pk')
     context = {
         'articles': articles,
