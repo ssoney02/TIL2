@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>나의 포트폴리오</title>
+</head>
+<body>
+  <h1>안녕하세요, 제 이름은 <b id="name">홍길동</b>입니다.</h1>
+  
+  <img src="" alt="" width="200">
+  
+  <h2>소개</h2>
+  <p>저는 <b id="job">[직업/전공]</b>으로 일하고 있습니다. <b id="experience">[간단한 경력/학력]</b>을 가지고 있으며, <b>[특기 또는 관심 분야]</b>에 대해 꾸준히 공부하고 있습니다.</p>
+  
+  <h2>프로젝트</h2>
+  <ul id="list-group">
+    <li><b>프로젝트 1:</b> <span class="project-1">[프로젝트 1 제목]</span></li>
+    <li><b>프로젝트 2:</b> <span class="project-2">[프로젝트 2 제목]</span></li>
+    <li><b>프로젝트 3:</b> <span class="project-3">[프로젝트 3 제목]</span></li>
+  </ul>
+  
+  <h2>연락처</h2>
+  <p>이메일: <b id="email">[이메일 주소]</b></p>
+  <p>전화번호: <b id="phone">[전화번호]</b></p>
+  
+  <script>
+    // id -> #id이름
+    // textContent: 내용!!
+    // setAttribut -> 속성을 다룰 때!
+    const nameTag = document.querySelector('#name')
+    console.log(nameTag.textContent)
+    nameTag.textContent = '농담곰'
+
+    const jobTag = document.querySelector('#job')
+    console.log(jobTag.textContent)
+    jobTag.textContent = '백수'
+
+    const exTag = document.querySelector('#experience')
+    console.log(exTag.textContent)
+    exTag.textContent = '잠자기'
+
+    const emailTag = document.querySelector('#email')
+    console.log(emailTag.textContent)
+    emailTag.textContent = 'nongdam@email.gom'
+
+    const mobileTag = document.querySelector('#phone')
+    console.log(mobileTag.textContent)
+    mobileTag.textContent = '010-0101-0101'
+
+    const imgTag = document.querySelector('img')
+    imgTag.setAttribute('src', 'profile.jpg')
+    console.log(imgTag.getAttribute('src'))
+
+    imgTag.setAttribute('alt','프로필 이미지')
+    console.log(imgTag.getAttribute('alt'))
+
+  </script>
+</body>
+</html>
