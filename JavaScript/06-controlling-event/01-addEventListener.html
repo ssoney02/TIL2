@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>버튼</button>
+
+  <script>
+    const button = document.querySelector('button')
+
+    // 이벤트 핸들러
+    const handleClick = function () {
+      window.alert('버튼이 클릭 되었습니다!')
+    }
+
+    // addEventListener 메서드를 이용해 버튼에 이벤트 핸들러를 등록
+    button.addEventListener('click', handleClick)
+    // handleClick를 인자로 넣었을 뿐이지, 호출하지 x
+    // 버튼을 click해야 handleClick이 호출됨
+    // handleClick() //을 적었으면 호출되었으니까 아무것도 안해도 알림이 뜰 것
+  </script>
+</body>
+
+</html>
