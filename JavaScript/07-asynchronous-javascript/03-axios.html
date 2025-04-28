@@ -1,0 +1,53 @@
+<!-- axios.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    // 1.
+    // api요청 보내는거랑 형식 유사!
+    const promiseObj = axios({
+      method: 'get',
+      url: 'https://api.thecatapi.com/v1/images/search'   // 이 경로로 요청을 보낼 것
+    })
+
+    // 호출 결과를 promiseObj 변수에 담음
+    console.log(promiseObj) // Promise object
+    // 요청을 보냈을 때 응답받아온 객체에 대해 약속
+    
+    promiseObj
+      // 성공했을 떄 (promise라는 객체가 가진 then 메소드를 쓸 것) -> 응답받아온 정보가 있을 것
+      .then((response) => {
+        console.log(response) // Response object
+        console.log(response.data)  // Response data 응답 받아온 데이터!
+      })
+      // 실패했을 때 -> 예외처리가 된 에러가 들어있을 것
+      .catch((error) => {
+        console.error(error)
+      })
+
+    // 2.
+    axios({
+      method: 'get',
+      url: 'https://api.thecatapi.com/v1/images/search'
+    })
+      .then((response) => {
+        console.log(response)
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+  </script>
+
+</body>
+
+</html>

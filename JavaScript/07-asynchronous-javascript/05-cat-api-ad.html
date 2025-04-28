@@ -1,0 +1,52 @@
+<!-- cat-api-ad.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>냥냥펀치</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    const btn = document.querySelector('button')
+
+    const getCats = function () {
+      // axios 요청을 보낼 것
+      axios({
+        method: 'get',
+        url: 'https://api.thecatapi.com/v1/images/search'
+      })
+        // 1. 필요한 정보
+        // response: 서버가 보내준 Json파일
+        .then((response) => {
+          // 0번쨰에 있는 정보를 imgUrl에다가 넣음
+          const imgUrl = response.data[0].url
+          return imgUrl
+        })
+        // 앞의 then에서 return 한 값이 다시 then 메서드를 호출 가능!!!!!!!!!!!
+        // 2. 넘겨받은 데이터 확인
+        .then((imgData) => {
+          console.log(imgData)
+          // 3. 화면 구성
+          const imgElem = document.createElement('img')
+          imgElem.setAttribute('src', imgData)
+          document.body.appendChild(imgElem)
+        })
+        .catch((error) => {
+          console.log(error)
+          console.log('실패했다옹')
+        })
+      console.log('야옹야옹')
+    }
+
+    btn.addEventListener('click', getCats)
+  </script>
+</body>
+
+</html>
