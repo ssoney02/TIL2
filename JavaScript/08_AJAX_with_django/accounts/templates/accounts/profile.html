@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>{{ person.username }}님의 프로필</h1>
+  <div> 
+    {% comment %} 
+    follow버튼 누르면 팔로워 값, follow 버튼 두 개만 바뀌었으면 좋겠음.. 지금은 전체 html을 다시 로드
+    불필요한 렌더링 과정이 너무 많음!! 
+    {% endcomment %}
+
+    {% comment %} 수정해야할 부분 1 {% endcomment %}
+    <div>
+      팔로잉 : <span id="followings-count">{{ person.followings.all|length }}</span> / 
+      팔로워 : <span id="followers-count">{{ person.followers.all|length }}</span>
+    </div>
+    {% if request.user != person %}
+
+    {% comment %} 수정해야할 부분2 {% endcomment %}
+      <div>
+        <!-- action="{% url 'accounts:follow' person.pk %}" method="POST" => 둘다 필요없어져서 날렸음! -->
+        <form id="follow-form" >
+          {% csrf_token %}
+          {% if request.user in person.followers.all %}
+            <input id="follow-button" type="submit" value="Unfollow">
+          {% else %}
+            <input id="follow-button" type="submit" value="Follow">
+          {% endif %}
+        </form>
+    </div>
+    {% endif %}
+  </div>  
+  <hr>
+  <div>
+    <h2>{{ person.username }}가 작성한 게시글</h2>
+    {% for article in person.article_set.all %}
+      <div>{{ article.title }}</div>
+    {% endfor %}
+    <hr>
+    <h2>{{ person.username }}가 작성한 댓글</h2> 
+    {% for comment in person.comment_set.all %} 
+      <div>{{ comment.content }}</div> 
+    {% endfor %}
+    
+    <hr>
+    <h2>{{ person.username }}가 좋아요한 게시글</h2> 
+    {% for article in person.like_articles.all %} 
+      <div>{{ article.title }}</div> 
+    {% endfor %}
+  </div>
+  <!-- axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script>
+    // form태그를 조작해야됨
+    // 지금은 form태그가 1개 밖에 없긴 함..
+    // queryselector로 그냥 'form'을 가져오면 확장성 상.. 안됨!! => 조작하고자 하는 대상이 정확히 누군지를 id로 명시!
+    const followForm = document.querySelector('#follow-form')
+    // csrf token 정보를 가져온다.
+    // name이 csrfmiddlewardtoken인 어떤 요소를 가져와서, 그 요소의 value만 보아서 쓴다.
+    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value
+
+    // 현재 프로필 주인의 팔로워 수를 보여주는 span tag 가져옴
+    const followerCountSpan = document.querySelector('#followers-count')
+    const followBtn = document.querySelector('#follow-button')
+
+    // 이 follow용 form에 submit 이벤트가 발생하면,
+    followForm.addEventListener('submit', function(event){
+      // 내 서버에 follow POST요청을 보낼 것이다
+      // 원래 form은 submit이 발생하면 action에 지정된 위치로 method에 지정된 방식으로 
+      // 자신이 가진 input들의 name과 value를 데이터로 요청 보냄
+      // 원래 하던 기존 이벤트를 취소!! => preventDefault()
+      event.preventDefault()  // form의 기존 이벤트를 막는다
+      // action에 적혀있던 경로로
+      // method에 적혀있던 방식으로
+      // 요청을 axios로 보낸다
+      axios({
+        url: '{% url "accounts:follow" person.pk %}',  // {% url 'accounts:follow' person.pk %}
+        // 요청 응답 코드 403 forbidden... 
+        // 경로는 요청 잘 감, 근데 csrf token 문제 -> form이 가진 원래 이벤트를 취소하고 axios로 보내는 거니까 csrf token을 빼먹은게 됨
+        method: 'POST',
+        headers: {'X-CSRFToken': csrftoken},
+
+      })
+      // 성공했을 떄
+      .then((response) => {
+        // follow 요청을 담당하는 URL로 POST요청이 가고, 
+        // follow 담당 view함수가 실행되어서, 적절한 if문을 통과한 후 , 실제 follow 기능이 실행되고, 
+        // profile로 redirect되어서
+        // profile view함수가 profile.html 파일을 반환. 
+        // 반환된 html 파일의 내용을 console.log 출력
+        console.log(response.data) // -> 응답 데이터가 html이 아니라..
+
+        // 이렇게 쓰면 변수명 일관성이 깨짐.. ?
+        const followerCount = response.data.follower_count
+        followerCountSpan.textContent = followerCount
+
+        // 객체 구조분해 할당.. 으로도 가능
+        // const { follower_count, is_follow } = response.data
+
+        // followerCountSpan.textContent = follower_count
+    
+        
+        // 상대방의 팔로워 수, 그리고 나에게 보여질 follow 버튼에 어떤 값이 적힐지에 대한 결과 
+        // 이를 json으로
+
+        const isFollow = response.data.is_follow
+        // isFollow의 값이 true면 이미 follow 돼있다는거니가 -> Unfollow
+        // false면 -> follow
+        followBtn.value = isFollow? 'Unfollow' : 'follow'
+
+      })
+      // 실패했을 때
+      .catch((err) => {
+        console.log(err)
+      })
+
+
+    })
+    
+  </script>
+</body>
+</html>

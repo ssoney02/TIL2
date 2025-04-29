@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Articles</h1>
+  {% if request.user.is_authenticated %}
+    <h3>Hello, {{ user.username }}</h3>
+    <a href="{% url 'accounts:profile' user.username %}">내 프로필</a>
+    <a href="{% url 'articles:create' %}">NEW</a>
+    <form action="{% url 'accounts:logout' %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="Logout">
+    </form>  
+    <form action="{% url 'accounts:delete' %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="회원탈퇴">
+    </form>  
+    <a href="{% url 'accounts:update' %}">회원정보 수정</a>
+  {% else %}
+    <a href="{% url 'accounts:login' %}">Login</a>
+    <a href="{% url 'accounts:signup' %}">Signup</a>
+  {% endif %}
+
+  <hr>
+  <div class="article-container">
+    {% for article in articles %}
+      <p>작성자 : <a href="{% url 'accounts:profile' article.user.username %}">{{ article.user }}</a></p>
+      <p>글 번호: {{ article.pk }}</p>
+      <a href="{% url 'articles:detail' article.pk %}">
+        <p>글 제목: {{ article.title }}</p>
+      </a>
+      <p>글 내용: {{ article.content }}</p>
+      {% comment %} 
+        좋아요 버튼을 클릭했을 때!
+        문제점: 좋아요버튼이 한개가 아님.. 다 addElement는 x...
+        동일한 기능을 하는 form 태그들이 동일한 class를 가진다 -> 지극히 당연
+        form 태그들을  forEach로 순회.. 
+        => 버블링!!
+      {% endcomment %}
+      <!-- article id 정보를 dataset property를 사용해서 할당해보자 -->
+       <!-- html: kebob-case가 기본 컨벤션 -->
+        <!-- 따라서, 모두 소문자로 작성 -->
+      <!-- <form class = "like-forms" action="{% url 'articles:likes' article.pk %}" method="POST" > -->
+      <form class="like-forms" data-article-id="{{article.pk}}">
+        {% csrf_token %}
+        {% if request.user in article.like_users.all %}
+          <input id="like-button-{{article.pk}}" type="submit" value="좋아요 취소">
+        {% else %}
+          <input id="like-button-{{article.pk}}" type="submit" value="좋아요">
+        {% endif %}
+      </form>      
+      <hr>
+    {% endfor %}
+  </div>
+
+  <!-- axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    const articleContainer = document.querySelector('.article-container')
+
+    // 한 번 렌더링 될 때의 csrftoken은 당연하게도 모두 똑같은 난수값을 가짐
+    // 따라서, 그냥 문서 최상단부터 처음 마주하는 csrftoken정보 얻어오면 어디서든 쓸 수 o
+    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value
+
+    articleContainer.addEventListener('submit', function (event) {
+      event.preventDefault()
+      // axios로 게시글에 좋아요 기능 요청!
+      console.log(event.currentTarget)
+      console.log(event.target)
+      // dataset property에 접근하기 위해서는
+      // element.dataset.propertyName을 작성하면 되는데
+      // HTML에서 kebob-case로 작성한 속성 명은, js에서 camelCase로 사용
+      const articleId = event.target.dataset.articleId
+      axios({
+        method : 'POST',
+        headers: {'X-CSRFToken': csrftoken},
+        // 버블링으로 발생한 form태그들 마다 액션이 다 다름.. 
+        // 누구한테서 이벤트가 발생했는지 currentTarget.
+        url : 'articles/${articleId}/likes/',
+      })
+      .then(response => {
+        console.log(response)
+        const isLike = response.data.is_like
+        const likeButton = document.querySelector(`#like-button-${articleId} `)
+        likeButton.value = isLike ? '좋아요 취소' : '좋아요'
+      })
+      .catch(err => {
+        console.log(err)
+      })
+
+    })
+  </script>
+
+</body>
+</html>
