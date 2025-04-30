@@ -114,4 +114,5 @@ git init 취소 → 그냥 gui에서 숨긴폴더 **.git 삭제**하면됨
 1. **git restore —staged**를 많이 씀
     - git 저장소에 commit이 존재하는 경우
 2. git rm —cached  → 잘 안씀..
-    - git 저장소에 commit이 없는 경우
+    - git 저장소에 commit이 없는 경우    
+    
