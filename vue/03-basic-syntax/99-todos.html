@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- v-model, v-on, v-bind, v-for를 활용한 todo 애플리케이션 구현 -->
+  <div id="app">
+    <select >
+      <option value="all">전체</option>
+      <option value="completed">완료됨</option>
+      <option value="in-progress">작업중</option>
+    </select>
+    <!-- 사용자 입력란 만들기 -->
+     <!-- v-model로 양방향 바인딩 가능
+      input에 사용자가 입력한 값이 newTodo 변수에도,
+      newTodo 변수의 값이 변동하면 그 값이 input의 value에도 양방향으로 반영됨 -->
+    <input type="text" v-model="newTodo">
+    <button @click="addTodo">+</button>
+    <p>{{ newTodo }}</p>
+    <ul>
+      <!-- template 태그는 렌더링 되지 않음!! 블락만 형성해주는 것 -->
+      <template v-for="(item, index) in filteredTodos" :key="item.id">
+        <li>{{ index }} - {{ item.text }}</li>
+        <!-- 객체 자체를 넘겨서! -->
+        <button @click="removeTodo(item)">delete</button>
+      </template>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref, computed } = Vue
+
+    const app = createApp({
+      setup() {
+        let id = 0
+        const isSelected = ref('all')
+        const newTodo = ref(null)
+        const todos = ref([
+          { id: id++, text: 'Learn HTML', isCompleted: true },
+          { id: id++, text: 'Learn JS' , isCompleted: true},
+          { id: id++, text: 'Learn Vue', isCompleted: false }
+        ])
+
+        const filteredTodos = computed(() => {
+          if (isSelected.value === 'completed') {
+            return todos.value.filter(todo => todo.completed)
+            // todo.completed가 true인 애들만 보아서 반환
+          } else if (isSelected.value === 'in-progress'){
+            return todos.value.filter(todo => !todo.isCompleted) // isCompleted가 false인 애들만 모아서 반환
+          } else {
+            return todos.value
+          }
+        })
+        // addTodo 함수
+        const addTodo = function(){
+          // todos 배열에 사용자가 입력한 값을 추가
+          
+          const data = {
+            id: id++,
+            text: newTodo.value,
+            isCompleted: false,
+          }
+          todos.value.push(data) // todo -> 객체 형태로 되어있고, 사용자가 입력한 값이 text에 들어가야할 것 같음
+          // 초기화
+          newTodo.value = ''
+        }
+        // removeTodo 함수
+        // 특정 요소를 삭제해야됨
+        const removeTodo = function(selectedTodo){
+          // 원본 todos가 가진 목록들 중에,
+          // 지금 선택된 todo 빼고 다시 배열 재구성해서 todos.value에 할당
+          todos.value = todos.value.filter(function(todo){
+            return todo !== selectedTodo
+          })
+        }
+        
+        return {
+          newTodo, todos, addTodo, removeTodo,
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
