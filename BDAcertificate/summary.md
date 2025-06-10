@@ -64,3 +64,31 @@ print(df[(df['age'] > (med + 1.5*std)) | (df['age'] < (med - 1.5*std))]['age'].s
 # 이상치 상한 벗어나는 애들 필터링 + 이상치 하한 벗어나는 애들 필터링
 df.loc[(df['age'] > max)]['age'].sum() + df.loc[(df['age'] < min)]['age'].sum()
 ```
+
+# titanic IQR 문제 (T1-1)
+## IQR vs. std
+- IQR: 데이터 분포 모양에 아무런 가정 X
+- std: 데이터가 정규분포를 따른다는 가정 필요 -> 평균을 기준으로 대칭, 이상치에 민감
+
+---
+<img src='./images/titanicexample.png'>
+std로 바로 2.698*std 하면 안됨 <br>
+med 기준 0.75, 0.25 -> Q3, Q1
+구한 후, 
+<br>
+IQR로 이상치 한계값 계산 <br>
+
+**IQR = Q3 - Q1**
+
+- .quantile(): 데이터에서 분위수를 구하는 함수 
+```py
+df['Fare'].quantile(0.25) # 25% 위치 (Q1, 1사분위수)
+df['Fare'].quantile(0,75) # 75% 위치 (Q3, 3사분위수)
+```
+
+# Titanic 소수점 (T1-2)
+## 주어진 데이터에서 이상치(소수점 나이)를 찾고 올림, 내림, 버림 했을때 3가지 모두 'age' 평균을 구한 다음 모두 더하여 출력하시오
+- np.ceil(): 올림
+- np.floor(): 내림
+- np.trunc(): 버림
+
