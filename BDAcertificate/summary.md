@@ -2,11 +2,25 @@
 - X: 독립변수
 - y: 종속변수
 
-- .isnull().sum(): 결측치가 있는 금액 확인
-
-- .fillna(0): 0을 결측치에 채움
+### 데이터 구조 확인
+- .isnull().sum(): 각 컬럼별 결측치 개수 출력
+- .shape: (행수, 열수)
+- .fillna(k): k를 결측치에 채움
 - .head(): 기본값 5개. 특정 컬럼의 위에서 부터 5개 값만 보여줌. 개수 지정가능
 - .tail(): 기본값 5개. 특정 컬럼의 아래에서부터 5개 값만 보여줌.
+- df['city'].unique(): city 컬럼의 종류 확인
+
+### 행/열 삭제
+1. axis 방식
+```py
+df.drop([0, 3], axis=0) # 행 삭제(axis=0)
+df.drop(['age', 'f1'], axis=1) # 컬럼 삭제(axis=1)
+```
+2. 명시적 방식
+```py
+df.drop(index=[0, 3])   # 행 삭제(index)
+df.drop(columns=['age', 'f1'])  # 컬럼 삭제(columns)
+```
 
 
 ## tutorial T1 2회 기출유형
