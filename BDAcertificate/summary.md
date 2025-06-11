@@ -17,6 +17,8 @@ df = pd.read_csv('https://raw.githubusercontent.com/Datamanim/pandas/main/lol.cs
 - .tail(): 기본값 5개. 특정 컬럼의 아래에서부터 5개 값만 보여줌.
 - df['city'].unique(): city 컬럼의 종류 확인
   - 유일값 개수 : .nunique()
+- .read_csv(index_col=k): k열을 index 컬럼으로 쓰겠다는 뜻
+  - 인덱스를 위한 열이 지정되어있으면 명시적으로 처리해주는게 좋음
 ---
 - 수치형 변수를 가진 컬럼 출력 
    - 일반적으로, exclude=object 사용
@@ -27,6 +29,22 @@ df.select_dtypes(exclude=object).columns
 ```py
 df.select_dtypes(include=object).columns
 ```
+---
+### 데이터 타입 변경
+1. pd.to_ 형태
+: datetime, int,float, timedelta 데이터 타입으로 변경
+```py
+pd.to_datetime()  # 날짜/시간
+pd.to_numeric()   # 수치형
+pd.to_timedelta() # 시간 간격
+```
+2. .astype()
+: 그 외 데이터 타입 변경
+```py
+df['category_col'] = df['category_col'].astype('category')  # 'category' 데이터 타입으로 변경하려는 경우 (Pandas 제공 데이터타입)
+df['int_col'] = df['int_col'].astype(int)
+```
+
 
 ### 행/열 삭제
 1. axis 방식
@@ -281,5 +299,91 @@ df[['neighbourhood_group', 'reviews_per_month']].groupby('neighbourhood_group').
 df[['neighbourhood_group', 'reviews_per_month']].groupby('neighbourhood_group').agg({'reviews_per_month': ['mean', 'var', 'max', 'min']})
 ```
 - 명시하지 않아도, groupby에 포함되지 않은 컬럼이 자동으로 집계 대상이 됨
+
+### 52. 계층적 인덱싱
+neighbourhood 값과 neighbourhood_group 값에 따른 price 의 평균을 계층적 indexing 없이 구하라
+```py
+df.groupby(['neighborhood', 'neighborhood_group']).price.mean().unstack()
+```
+- .unstack(): MultiIndex를 평평하게 만듦 => 2차원 표 형태로 만듦
+
+### 55. 데이터중 neighbourhood_group 값에 따른 room_type 컬럼의 숫자를 구하고 neighbourhood_group 값을 기준으로 각 값의 비율을 구하여라
+```py
+ans = df[['neighbourhood_group', 'room_type']].groupby(['neighbourhood_group', 'room_type']).size().unstack()
+ans.loc[:,:] = (ans.values / ans.sum(axis=1).values.reshape(-1,1))
+```
+- 원본 데이터 값 / (행별합계의 값 -> 브로드캐스팅 열 벡터 변형..)
+- 브로드캐스팅: 서로 모양이 다른 배열을 자동으로 확장시켜서 연산 가능하게 해줌
+
+
+### 57. map
+Income_Category의 카테고리를 map 함수를 이용하여 다음과 같이 변경하여 newIncome 컬럼에 매핑하라 Unknown : N
+Less than $40K : a
+$40K - $60K : b
+$60K - $80K : c
+$80K - $120K : d
+$120K +’ : e
+```py
+# 1. lambda 사용
+dic = {
+    'Unknown'        : 'N',
+    'Less than $40K' : 'a',
+    '$40K - $60K'    : 'b',
+    '$60K - $80K'    : 'c',
+    '$80K - $120K'   : 'd',
+    '$120K +'        : 'e'   
+}
+
+df['newIncome']  =df.Income_Category.map(lambda x: dic[x])
+
+Ans = df['newIncome']
+
+# 2. 직접 나열.. 
+df['newIncome'] = df['Income_Category'].map({'Unknown': 'N', 'Less than $40K': 'a', '$40K - $60K': 'b', '$60K - $80K': 'c', '$80K - $120K': 'd', '$120K +': 'e'})
+```
+- lambda x: dic[x] : 각 x에 대해 dic[x] 값을 리턴하라
+
+
+### 58. apply 함수
+```py
+df['AgeState']  = df.Customer_Age.map(lambda x: x//10 *10)
+df['AgeState'].value_counts().sort_index()
+```
+
+### 60. Education_Level의 값중 Graduate단어가 포함되는 값은 1 그렇지 않은 경우에는 0으로 변경하여 newEduLevel 컬럼을 정의하고 빈도수를 출력하라
+```py
+# 1. map, lambda 사용
+df['newEduLevel'] = df['Education_Level'].map(lambda x: 1 if 'Graduate' in x else 0)
+
+# 2. apply 사용
+def changeEdu(x):
+  if 'Graduate' in x:
+    return 1
+  else:
+    return 0
+
+df['newEduLevel'] = df['Education_Level'].apply(changeEdu)
+df['newEduLevel'].value_counts()
+```
+
+### 62. Marital_Status 컬럼값이 Married 이고 Card_Category 컬럼의 값이 Platinum인 경우 1 그외의 경우에는 모두 0으로 하는 newState컬럼을 정의하라. newState의 각 값들의 빈도수를 출력하라
+**행 단위 체크**
+```py
+def check(x):
+  if x.Marital_Status == 'Married' and x.Card_Category == 'Platinum':
+    return 1
+  else:
+    return 0
+
+df['newState'] = df.apply(check, axis=1)  # axis=1 -> 행 단위로 check함수 적용
+# df.apply(check) -> check 함수를 열 단위로 적용!!!!
+df['newState'].value_counts()
+```
+
+### 66. Yr_Mo_Dy에 존재하는 년도의 유일값을 모두 출력하라
+**datetime 타입**
+```py
+df['Yr_Mo_Dy'].dt.year.unique()
+```
 
 
