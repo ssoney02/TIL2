@@ -195,3 +195,32 @@ ans = ans.drop_duplicates('item_name', keep='last')
 # 해당 조건의 셀을 직접 수정
 df[df['item_name']== 'Izze', 'item_name'] = 'Fizzy Lizzy'
 ```
+
+### 40. df의 데이터 중 choice_description 값에 Vegetables 들어가지 않는 경우의 갯수를 출력하라
+```py
+len(df[~df['choice_description'].str.contains('Vegetables')])
+```
+
+### df의 데이터 중 item_name 값이 N으로 시작하는 데이터를 모두 추출하라
+- .str.startswith('')
+```py
+df[df['item_name'].str.startswith('N')]
+```
+
+### df의 데이터 중 item_name 값의 단어갯수가 15개 이상인 데이터를 인덱싱하라
+df[df['item_name'].str.len()>=15]
+
+### df의 데이터 중 new_price값이 lst에 해당하는 경우의 데이터 프레임을 구하고 그 갯수를 출력하라 
+- lst =[1.69, 2.39, 3.39, 4.45, 9.25, 10.98, 11.75, 16.98]
+```py
+df[df['new_price'].isin(lst)]
+```
+---
+**+.str을 사용하는 경우...**
+Pandas에서 문자열 데이터를 담고 있는 Series에 문자열 관련 메서드(len, lower, contains.. 등)를 적용하려면 <br>
+.str을 통해 *문자열 전용 벡터화 인터페이스*에 접근해야됨. <br>
+- 반복문 없이 내부적으로 벡터화 처리
+```py
+df['col'].str.len() # 'col'컬럼의 각 문자열 원소에 대해 .len() 적용
+len(df['col'])  # Series 전체의 길이(즉, 행 개수)
+```
