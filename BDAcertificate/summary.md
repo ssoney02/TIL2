@@ -224,3 +224,62 @@ Pandas에서 문자열 데이터를 담고 있는 Series에 문자열 관련 메
 df['col'].str.len() # 'col'컬럼의 각 문자열 원소에 대해 .len() 적용
 len(df['col'])  # Series 전체의 길이(즉, 행 개수)
 ```
+
+
+### 데이터의 각 host_name의 빈도수를 구하고 host_name으로 정렬하여 상위 5개를 출력하라
+- sort_index(): 알파벳 순 정렬 (host_name 기준)
+- sort_values(): 빈도수 기준 정렬
+```py
+# groupby()
+df.groupby('host_name').size().sort_index()
+
+# value_counts()는 빈도수 기준으로 자동 내림차순 정렬
+# host_name으로 다시 정렬하기 위해서 sort_index()사용
+df['host_name'].value_counts().sort_index()
+
+```
+- .value_counts() : 고유값의 빈도 수 계산
+  - Series 객체에만 사용 가능
+  - 자동으로 (빈도 수 기준) 내림차순 정렬
+
+### 46. 새로운 데이터 프레임 생성, 컬럼 명명
+데이터의 각 host_name의 빈도수를 구하고 빈도수 기준 내림차순 정렬한 데이터 프레임을 만들어라. 빈도수 컬럼은 counts로 명명하라
+```py
+df.groupby('host_name').size().to_frame().rename(columns={0:'counts'}).sort_values('counts', ascending=False)
+```
+
+### 조합 단위 기준 그룹화
+```py
+df.groupby(['neighbourhood_group', 'neighbourhood'], as_index=False).size()
+```
+- 'neighbourhood_group' + 'neighbourhood' 조합 단위 기준으로 그룹화
+- as_index=False: 일반적으로 groupby()는 그룹 기준 컬럼들을 결과의 인덱스로 사용
+  - 그룹 기준 컬럼들을 인덱스가 아니라 일반 컬럼으로 유지
+  - size()는 항상 Series를 반환하므로 as_index=False는 무시됨 <br>
+    -> 실제로는 인덱스를 갖는 Series를 반환함......?
+  - as_index=False
+  <img src='./images/47_1.png'>
+  - as_index 옵션 설정 x
+  <img src='./images/47_2.png'>
+- size(): 각 그룹이 몇 개의 행을 갖는지 계산
+
+### neighbourhood_group의 값에 따른 neighbourhood컬럼 값 중 neighbourhood_group그룹의 최댓값들을 출력하라
+```py
+df.groupby(['neighbourhood_group', 'neighbourhood'], as_index=False).size().groupby(['neighbourhood_group'], as_index=False).max()
+```
+
+### 여러 통계 함수 동시에 적용
+```py
+df[['neighbourhood_group','price']].groupby('neighbourhood_group').agg(['mean','var','max','min'])
+```
+
+### 50. neighbourhood_group 값에 따른 reviews_per_month 평균, 분산, 최대, 최소 값을 구하여라
+```py
+df[['neighbourhood_group', 'reviews_per_month']].groupby('neighbourhood_group').agg(['mean', 'var', 'max', 'min'])
+
+# agg 적용 컬럼 명시
+df[['neighbourhood_group', 'reviews_per_month']].groupby('neighbourhood_group').agg({'reviews_per_month': ['mean', 'var', 'max', 'min']})
+```
+- 명시하지 않아도, groupby에 포함되지 않은 컬럼이 자동으로 집계 대상이 됨
+
+
