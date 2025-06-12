@@ -392,4 +392,55 @@ df['Yr_Mo_Dy'].dt.year.unique()
   - Series 전체의 dtype -> datetime64[ns] <br>
   - 개별 원소(값) -> pandas.Timestamp
 
+### .dt.weekday vs. .dt.day_name()
+- .dt.weekday : 월요일 = 0, 화요일 = 1 ... 일요일 = 6 으로 반환
+- .dt.day_name(): 요일 이름으로 변환
 
+
+### 72. 모든 결측치는 컬럼기준 직전의 값으로 대체하고 첫번째 행에 결측치가 있을경우 뒤에있는 값으로 대채하라
+- .fillna(method='ffill'): 앞 값으로 채움
+- .fillna(method='bfill'): 뒤 값으로 채움 
+```py
+# 먼저 ffill로 앞의 값으로 채우고,
+# 앞쪽에 값이 없어서 못 채워진 결측치 있으면
+# bfill로 뒤의 값으로 채움
+df = df.fillna(method='ffill').fillna(method='bfill')
+```
+
+### 73. 년도-월 을 기준으로 groupby
+```py
+# 월 기준 묶음
+ans = df.groupby(df['Yr_Mo_Dy'].dt.month).mean()
+
+# 년도-월 기준으로 묶음
+ans = df.groupby(df['Yr_Mo_Dy'].dt.to_period('M')).mean()
+```
+
+### 74. 1차 차분
+RPT 컬럼의 값을 일자별 기준으로 1차차분하라
+```py
+ans = df['RPT'].diff()
+```
+
+### 75. 이동평균값
+RPT와 VAL의 컬럼을 일주일 간격으로 각각 이동평균한값을 구하여라
+- .rolling(k): 앞에서부터 k개의 값을 기준으로 평균값 계산
+  - k개씩 윈도우를 잡아 이동하며 계산
+  - 윈도우 한 칸씩 이동하면서 다음 평균 계산
+```py
+ans = df[['RPT', 'VAL']].rolling(7).mean()
+```
+
+### 79. 시간이 연속적으로 존재하며 결측치가 없는지 확인하라
+**시간을 차분했을 경우 첫 값은 NaN, 이후 모든 차분값이 동일하면 연속이라 판단함**
+```py
+# .diff(): datetime 간의 간격 계산
+#   .diff()의 첫 값: 무조건 NaT(Not a Time) => 연속이라면, 항상 NaT 포함 두 개의 유일값이 생김 (아니면 3개 이상의 값이 나올 것)
+# .unique(): 고유한 시간 간격 종류 수 
+
+check = len(df['(년-월-일:시)'].diff().unique())
+if check == 2:
+  ans = True
+else:
+  ans = False
+```
