@@ -3,6 +3,7 @@
 - y: 종속변수
 
 ### 데이터 구조 확인
+- **Series: 인덱스를 가진 1차원 배열**
 - read_csv는 ,로 데이터 구분함 -> ex. \t로 구분되어있는경우,
   - sep or delimiter 옵션 추가 
 ```py
@@ -385,5 +386,10 @@ df['newState'].value_counts()
 ```py
 df['Yr_Mo_Dy'].dt.year.unique()
 ```
+
+### datetime / typestamp
+- pd.to_datetime() 사용 시 <br>
+  - Series 전체의 dtype -> datetime64[ns] <br>
+  - 개별 원소(값) -> pandas.Timestamp
 
 
