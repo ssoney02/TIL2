@@ -444,3 +444,47 @@ if check == 2:
 else:
   ans = False
 ```
+
+### 81. 날짜 컬럼을 index로 만들어라
+```py
+df.set_index('(년-월-일:시)', inplace=True, drop=True)
+```
+**inplace**
+- inplace=True : df 자체가 바뀜. 리턴값 없음
+- inplace=False: 원본 df는 그대로, 바뀐 DataFrame이 리턴됨
+**drop**
+- drop=True: 인덱스로 쓴 컬럼은 열에서 제거됨
+- drop=False: 인덱스로 쓴 컬럼이 열에도 남아 있음(중복)
+
+### 82. 데이터를 주단위로 뽑아서 최소,최대, 평균, 표준표차를 구하여라
+**resample**
+: 시간 인덱스를 기준으로 데이터를 재조정(리샘플링)하는 메서드
+-> 전제조건: df가 반드시 datetime 형식의 인덱스를 가져야됨
+- 리샘플링 단위
+  - 'D': 일 단위
+  - 'W': 주 단위
+  - 'M': 월단위(월말 기준) -> 매달 말일 기준 묶음
+  - 'MS': 월단위(월초 기준) -> 매달 1일 기준 묶음
+  - 'Q': 분기 마지막 달 기준 -> 3,6,9,12월 말 기준
+  - 'Y': 연말(12월 31일)기준
+  - 'YS': 1월 1일 기준
+  - 'H': 1시간 단위
+  - 'T' or 'min': 분단위
+  - 'S': 초 단위
+  - 2W , 3D.. 등등도 가능
+
+```py
+df.resample('W').agg(['min', 'max', 'mean', 'std'])
+```
+
+### 83. .str 접근자
+: 문자열 메서드를 벡터화해서 쓸 수 있도록 .str 접근자 제공
+- Series에는 python의 str.split(), str.replace() 같은 문자열 전용 메서드가 적용되지 x
+```py
+df['First Tooltip'] = df['First Tooltip'].str.split('[').str[0].astype(float)
+# df['First Tooltip'] = df['First Tooltip'].map(lambda x: float(x.split("[")[0]))
+```
+
+### 86. Dim1에 따른 년도별 사망비율의 평균을 구하라 (pivot vs. pivot_table)
+- .pivot: 중복값허용x, 집계함수x
+- .pivot_table(): 중복값허용o, 집계함수o(aggfunc())
