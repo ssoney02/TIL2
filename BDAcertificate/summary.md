@@ -253,7 +253,8 @@ len(df['col'])  # Series 전체의 길이(즉, 행 개수)
 - sort_index(): 알파벳 순 정렬 (host_name 기준)
 - sort_values(): 빈도수 기준 정렬
 ```py
-# groupby()
+# groupby() -> groupby객체를 반환(series반환이 x) 
+# groupby객체는 후속 연산을 해야 의미있는 값을 반환!!
 df.groupby('host_name').size().sort_index()
 
 # value_counts()는 빈도수 기준으로 자동 내림차순 정렬
@@ -264,7 +265,8 @@ df['host_name'].value_counts().sort_index()
 - .value_counts() : 고유값의 빈도 수 계산
   - Series 객체에만 사용 가능
   - 자동으로 (빈도 수 기준) 내림차순 정렬
-
+  - 빈도 수 기준으로 정렬해서 Series를 반환!!!!! 
+  
 ### 46. 새로운 데이터 프레임 생성, 컬럼 명명
 데이터의 각 host_name의 빈도수를 구하고 빈도수 기준 내림차순 정렬한 데이터 프레임을 만들어라. 빈도수 컬럼은 counts로 명명하라
 ```py
