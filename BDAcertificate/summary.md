@@ -1,4 +1,8 @@
-## 작업형2 무작정 따라해보기
+### help(), dir()
+- dir(): 메서드 종류
+- help(): 사용법 공식문서
+
+### 작업형2 무작정 따라해보기
 - X: 독립변수
 - y: 종속변수
 
@@ -488,3 +492,18 @@ df['First Tooltip'] = df['First Tooltip'].str.split('[').str[0].astype(float)
 ### 86. Dim1에 따른 년도별 사망비율의 평균을 구하라 (pivot vs. pivot_table)
 - .pivot: 중복값허용x, 집계함수x
 - .pivot_table(): 중복값허용o, 집계함수o(aggfunc())
+
+### 91. concat
+: 시리즈나 데이터를 이어붙일 때 쓰는 함수
+
+### 93. transpose (전치)
+: 행과 열을 뒤바꾸는 연산
+- .transpose, .T
+
+### 94. merge 함수
+- key: 합칠 때의 기준 열
+- 양쪽 테이블의 기준 열이 다른 경우 left_key, right_key로 다르게 지정
+
+### join
+- 공통된 부분만 합치기: inner
+- 전체 다 합치기: outer
