@@ -509,3 +509,4 @@ df['First Tooltip'] = df['First Tooltip'].str.split('[').str[0].astype(float)
 ### join
 - 공통된 부분만 합치기: inner
 - 전체 다 합치기: outer
+
