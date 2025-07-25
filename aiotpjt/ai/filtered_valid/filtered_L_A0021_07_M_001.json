@@ -1,0 +1,2000 @@
+[
+  {
+    "TimeStamp": "2024-10-18T06:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 118,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 7
+    }
+  },
+  {
+    "TimeStamp": "2024-10-18T06:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 121,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 8
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T08:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.6,
+      "Humidity": 51.0,
+      "Illuminance": 8.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T08:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.7,
+      "Humidity": 51.0,
+      "Illuminance": 15.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 85,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 12
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T10:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.6,
+      "Humidity": 48.0,
+      "Illuminance": 65.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T11:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.4,
+      "Humidity": 49.0,
+      "Illuminance": 62.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 77,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 98
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T11:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.4,
+      "Humidity": 49.0,
+      "Illuminance": 63.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 15
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T11:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.5,
+      "Humidity": 48.0,
+      "Illuminance": 63.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 73,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T11:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.5,
+      "Humidity": 48.0,
+      "Illuminance": 62.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 73,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T11:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.4,
+      "Humidity": 48.0,
+      "Illuminance": 61.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 71,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 113
+    }
+  },
+  {
+    "TimeStamp": "2024-10-19T12:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.1,
+      "Humidity": 48.0,
+      "Illuminance": 62.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 73,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-20T22:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 42.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 67,
+      "SPO2": 99,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-20T22:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 42.0,
+      "Illuminance": 0.0,
+      "TVOC": 37.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 68,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-20T22:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 43.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 63,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-20T22:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 43.0,
+      "Illuminance": 0.0,
+      "TVOC": 58.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 64,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 44
+    }
+  },
+  {
+    "TimeStamp": "2024-10-20T23:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 44.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 70,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 61
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T00:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 44.0,
+      "Illuminance": 62.0,
+      "TVOC": 29.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 78,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T00:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 43.0,
+      "Illuminance": 61.0,
+      "TVOC": 43.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 96,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 8
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T00:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 43.0,
+      "Illuminance": 60.0,
+      "TVOC": 41.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 76,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T00:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 43.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 70,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T01:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 43.0,
+      "Illuminance": 0.0,
+      "TVOC": 46.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 68,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 23
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T01:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 44.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 68,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T01:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 44.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 65,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T01:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.1,
+      "Humidity": 44.0,
+      "Illuminance": 0.0,
+      "TVOC": 39.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 67,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T01:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.1,
+      "Humidity": 44.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 67,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T01:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.0,
+      "Humidity": 45.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 75,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T02:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.0,
+      "Humidity": 45.0,
+      "Illuminance": 0.0,
+      "TVOC": 32.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 67,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 7
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T06:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 48.0,
+      "Illuminance": 0.0,
+      "TVOC": 37.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 73,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-21T08:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.4,
+      "Humidity": 45.0,
+      "Illuminance": 61.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 70,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 14
+    }
+  },
+  {
+    "TimeStamp": "2024-10-22T04:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.9,
+      "Humidity": 48.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 78,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-22T04:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.9,
+      "Humidity": 48.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 86,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-22T04:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.9,
+      "Humidity": 48.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 88,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-22T04:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.0,
+      "Humidity": 48.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 84,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-22T06:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.2,
+      "Humidity": 48.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 90,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-22T06:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.1,
+      "Humidity": 49.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 88,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T05:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.6,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 84,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T05:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.7,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 95,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T05:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.7,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 92,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T06:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.7,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 87,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T06:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.6,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 86,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 8
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T06:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.6,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 82,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T06:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.5,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 76,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T06:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.6,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 78,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T06:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.5,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 78,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T07:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.5,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 76,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T07:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.6,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 74,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T07:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.6,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 72,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T07:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.6,
+      "Humidity": 51.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 78,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T07:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.6,
+      "Humidity": 50.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 72,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T07:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.5,
+      "Humidity": 50.0,
+      "Illuminance": 63.0,
+      "TVOC": 59.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 74,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 8
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T08:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.1,
+      "Humidity": 47.0,
+      "Illuminance": 63.0,
+      "TVOC": 37.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 73,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T08:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.2,
+      "Humidity": 48.0,
+      "Illuminance": 63.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 74,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T08:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.4,
+      "Humidity": 48.0,
+      "Illuminance": 62.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 78,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 14
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T08:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.5,
+      "Humidity": 48.0,
+      "Illuminance": 62.0,
+      "TVOC": 86.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 72,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 15
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T08:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.7,
+      "Humidity": 48.0,
+      "Illuminance": 62.0,
+      "TVOC": 42.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 70,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 400
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T08:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.0,
+      "Humidity": 49.0,
+      "Illuminance": 62.0,
+      "TVOC": 39.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 77,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 62
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T09:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 50.0,
+      "Illuminance": 62.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 22
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T09:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 51.0,
+      "Illuminance": 62.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T09:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 49.0,
+      "Illuminance": 62.0,
+      "TVOC": 32.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T09:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.4,
+      "Humidity": 50.0,
+      "Illuminance": 61.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T09:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.5,
+      "Humidity": 50.0,
+      "Illuminance": 61.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T09:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.7,
+      "Humidity": 49.0,
+      "Illuminance": 61.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T10:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.7,
+      "Humidity": 48.0,
+      "Illuminance": 61.0,
+      "TVOC": 37.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T10:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.8,
+      "Humidity": 48.0,
+      "Illuminance": 61.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T10:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.9,
+      "Humidity": 48.0,
+      "Illuminance": 61.0,
+      "TVOC": 37.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T10:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.9,
+      "Humidity": 48.0,
+      "Illuminance": 61.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T10:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.9,
+      "Humidity": 48.0,
+      "Illuminance": 64.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T10:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.9,
+      "Humidity": 48.0,
+      "Illuminance": 63.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-10-23T11:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.9,
+      "Humidity": 48.0,
+      "Illuminance": 62.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T00:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.3,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 86,
+      "SPO2": 91,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T00:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.3,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 86,
+      "SPO2": 91,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 73
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T00:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.2,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 97,
+      "SPO2": 91,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 21
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T00:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.2,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 82,
+      "SPO2": 91,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 28
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T00:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.2,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 67,
+      "SPO2": 91,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 8
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T00:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.2,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 52,
+      "SPO2": 90,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 7
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T01:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.3,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 38.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 94,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T01:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.2,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 37.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 106,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 15
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T01:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.3,
+      "Humidity": 45.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 84,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T01:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.2,
+      "Humidity": 45.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 83,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T22:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 45.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 85,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 9
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T22:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 45.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 88,
+      "SPO2": 99,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 37
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T23:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.4,
+      "Humidity": 45.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 99,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 10
+    }
+  },
+  {
+    "TimeStamp": "2024-11-01T23:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.6,
+      "Humidity": 45.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 86,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 138
+    }
+  },
+  {
+    "TimeStamp": "2024-11-02T03:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.5,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 84,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-02T04:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.6,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 84,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-03T22:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.7,
+      "Humidity": 47.0,
+      "Illuminance": 57.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 84,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-04T09:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.2,
+      "Humidity": 48.0,
+      "Illuminance": 59.0,
+      "TVOC": 32.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 84,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-05T23:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.0,
+      "Humidity": 38.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 71,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-05T23:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.1,
+      "Humidity": 38.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 79,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-11T00:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.1,
+      "Humidity": 42.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-12T00:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.6,
+      "Humidity": 40.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 82,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-12T23:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.9,
+      "Humidity": 40.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 67,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-12T23:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.6,
+      "Humidity": 41.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 64,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 131
+    }
+  },
+  {
+    "TimeStamp": "2024-11-12T23:40",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.4,
+      "Humidity": 41.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-14T00:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.3,
+      "Humidity": 41.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-14T22:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.8,
+      "Humidity": 41.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 81,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-14T22:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.8,
+      "Humidity": 41.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 67,
+      "SPO2": 96,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-14T22:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.6,
+      "Humidity": 42.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 71,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 9
+    }
+  },
+  {
+    "TimeStamp": "2024-11-16T00:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 29.0,
+      "Humidity": 42.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-16T23:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.8,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 70,
+      "SPO2": 96,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-17T00:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 28.8,
+      "Humidity": 46.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 70,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 7
+    }
+  },
+  {
+    "TimeStamp": "2024-11-17T23:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.4,
+      "Humidity": 34.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 79,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-18T00:20",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 33.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 76,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 66
+    }
+  },
+  {
+    "TimeStamp": "2024-11-18T00:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.4,
+      "Humidity": 34.0,
+      "Illuminance": 0.0,
+      "TVOC": 33.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-18T23:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.3,
+      "Humidity": 31.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 86,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 14
+    }
+  },
+  {
+    "TimeStamp": "2024-11-18T23:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.4,
+      "Humidity": 32.0,
+      "Illuminance": 0.0,
+      "TVOC": 35.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 70,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 92
+    }
+  },
+  {
+    "TimeStamp": "2024-11-20T00:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.2,
+      "Humidity": 33.0,
+      "Illuminance": 57.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-20T23:30",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 27.0,
+      "Humidity": 36.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 82,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 21
+    }
+  },
+  {
+    "TimeStamp": "2024-11-21T22:50",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.9,
+      "Humidity": 39.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 73,
+      "SPO2": 96,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-22T00:10",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.8,
+      "Humidity": 38.0,
+      "Illuminance": 0.0,
+      "TVOC": 34.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 97,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  },
+  {
+    "TimeStamp": "2024-11-24T02:00",
+    "Age": 80,
+    "Gender": 0,
+    "DiseaseYN": 0,
+    "EM_Sensor": {
+      "Temperature": 26.5,
+      "Humidity": 32.0,
+      "Illuminance": 0.0,
+      "TVOC": 36.0
+    },
+    "SM_Sensor": {
+      "HeartRate": 80,
+      "SPO2": 98,
+      "SkinTemperature": 0.0,
+      "WalkingSteps": 0
+    }
+  }
+]

@@ -1,0 +1,918 @@
+{
+    "MetaData": {
+        "ID": "0006",
+        "Age": 80,
+        "Gender": "F",
+        "Region": "강원특별자치도",
+        "DiseaseYN": "Y",
+        "ReceiptST": "N",
+        "Environment": "주택형",
+        "ModelList": "['SME20SD', '바이탈링', 'MVPC10']",
+        "RawUnit": {
+            "Environmental": "°C, RH, CdS%, au, ppm, ppb",
+            "VitalRing": "bpm, br/min, %, °C, level, %, steps/10min, au, au, Kcal/10min"
+        }
+    },
+    "TimeSeriesData": [
+        {
+            "SeqNum": 1000000,
+            "TimeStamp": "2024-10-24T00:50",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.2,
+                "Humidity": 67.0,
+                "Illuminance": 0.0,
+                "Activity_IR": 0,
+                "CO2": 424.0,
+                "TVOC": 34.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 75,
+                "BreathRate": 16,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 335,
+                "StressIndex": 0,
+                "ActivityIntensity": 329,
+                "CaloricExpenditure": 118,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_0050.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000001,
+            "TimeStamp": "2024-10-24T01:00",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.2,
+                "Humidity": 66.0,
+                "Illuminance": 0.0,
+                "Activity_IR": 0,
+                "CO2": 422.0,
+                "TVOC": 33.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 70,
+                "BreathRate": 16,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 285,
+                "StressIndex": 0,
+                "ActivityIntensity": 530,
+                "CaloricExpenditure": 100,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_0100.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000002,
+            "TimeStamp": "2024-10-24T12:20",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 19.8,
+                "Humidity": 64.0,
+                "Illuminance": 31.0,
+                "Activity_IR": 8,
+                "CO2": 421.0,
+                "TVOC": 33.0,
+                "Label": "기타"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 56,
+                "BreathRate": 16,
+                "SPO2": 97,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 93,
+                "ActivityIntensity": 14,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1220.png",
+                "Caption": "객체가 1명 있고, 서있음."
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "기타",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000003,
+            "TimeStamp": "2024-10-24T12:30",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 19.9,
+                "Humidity": 63.0,
+                "Illuminance": 29.0,
+                "Activity_IR": 0,
+                "CO2": 427.0,
+                "TVOC": 36.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 59,
+                "BreathRate": 16,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 32,
+                "ActivityIntensity": 0,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1230.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000004,
+            "TimeStamp": "2024-10-24T12:40",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.0,
+                "Humidity": 63.0,
+                "Illuminance": 27.0,
+                "Activity_IR": 0,
+                "CO2": 423.0,
+                "TVOC": 33.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 59,
+                "BreathRate": 15,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 73,
+                "ActivityIntensity": 0,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1240.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000005,
+            "TimeStamp": "2024-10-24T12:50",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.0,
+                "Humidity": 63.0,
+                "Illuminance": 23.0,
+                "Activity_IR": 0,
+                "CO2": 423.0,
+                "TVOC": 34.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 58,
+                "BreathRate": 19,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 67,
+                "ActivityIntensity": 23,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1250.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000006,
+            "TimeStamp": "2024-10-24T13:00",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 19.9,
+                "Humidity": 63.0,
+                "Illuminance": 22.0,
+                "Activity_IR": 0,
+                "CO2": 423.0,
+                "TVOC": 34.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 56,
+                "BreathRate": 15,
+                "SPO2": 96,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 90,
+                "ActivityIntensity": 20,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1300.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000007,
+            "TimeStamp": "2024-10-24T13:10",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 19.8,
+                "Humidity": 63.0,
+                "Illuminance": 20.0,
+                "Activity_IR": 0,
+                "CO2": 427.0,
+                "TVOC": 35.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 50,
+                "BreathRate": 12,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 92,
+                "ActivityIntensity": 4,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1310.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000008,
+            "TimeStamp": "2024-10-24T13:20",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 19.7,
+                "Humidity": 63.0,
+                "Illuminance": 19.0,
+                "Activity_IR": 0,
+                "CO2": 423.0,
+                "TVOC": 34.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 55,
+                "BreathRate": 16,
+                "SPO2": 97,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 58,
+                "ActivityIntensity": 0,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1320.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000009,
+            "TimeStamp": "2024-10-24T14:10",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 19.7,
+                "Humidity": 63.0,
+                "Illuminance": 9.0,
+                "Activity_IR": 0,
+                "CO2": 423.0,
+                "TVOC": 33.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 52,
+                "BreathRate": 18,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 0,
+                "ActivityIntensity": 8,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1410.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000010,
+            "TimeStamp": "2024-10-24T14:20",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 19.7,
+                "Humidity": 63.0,
+                "Illuminance": 8.0,
+                "Activity_IR": 0,
+                "CO2": 422.0,
+                "TVOC": 33.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 50,
+                "BreathRate": 17,
+                "SPO2": 96,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 90,
+                "ActivityIntensity": 0,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1420.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000011,
+            "TimeStamp": "2024-10-24T14:30",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 19.7,
+                "Humidity": 63.0,
+                "Illuminance": 8.0,
+                "Activity_IR": 0,
+                "CO2": 423.0,
+                "TVOC": 33.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 50,
+                "BreathRate": 18,
+                "SPO2": 96,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 159,
+                "StressIndex": 88,
+                "ActivityIntensity": 169,
+                "CaloricExpenditure": 56,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241024_1430.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000012,
+            "TimeStamp": "2024-10-25T17:10",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.6,
+                "Humidity": 61.0,
+                "Illuminance": 5.0,
+                "Activity_IR": 0,
+                "CO2": 417.0,
+                "TVOC": 31.0,
+                "Label": "기타"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 59,
+                "BreathRate": 14,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 16,
+                "StressIndex": 88,
+                "ActivityIntensity": 104,
+                "CaloricExpenditure": 6,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241025_1710.png",
+                "Caption": "객체가 1명 있고, 앉아있음."
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "기타",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000013,
+            "TimeStamp": "2024-10-25T17:50",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.3,
+                "Humidity": 61.0,
+                "Illuminance": 0.0,
+                "Activity_IR": 0,
+                "CO2": 418.0,
+                "TVOC": 31.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 54,
+                "BreathRate": 20,
+                "SPO2": 97,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 0,
+                "StressIndex": 90,
+                "ActivityIntensity": 166,
+                "CaloricExpenditure": 0,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241025_1750.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000014,
+            "TimeStamp": "2024-10-25T18:00",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.2,
+                "Humidity": 61.0,
+                "Illuminance": 0.0,
+                "Activity_IR": 0,
+                "CO2": 418.0,
+                "TVOC": 31.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 54,
+                "BreathRate": 18,
+                "SPO2": 97,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 64,
+                "StressIndex": 0,
+                "ActivityIntensity": 347,
+                "CaloricExpenditure": 23,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241025_1800.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000015,
+            "TimeStamp": "2024-10-25T18:10",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.1,
+                "Humidity": 62.0,
+                "Illuminance": 0.0,
+                "Activity_IR": 0,
+                "CO2": 420.0,
+                "TVOC": 32.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 57,
+                "BreathRate": 17,
+                "SPO2": 97,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 107,
+                "StressIndex": 0,
+                "ActivityIntensity": 464,
+                "CaloricExpenditure": 38,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241025_1810.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000016,
+            "TimeStamp": "2024-10-25T18:20",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.0,
+                "Humidity": 62.0,
+                "Illuminance": 0.0,
+                "Activity_IR": 0,
+                "CO2": 424.0,
+                "TVOC": 34.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 60,
+                "BreathRate": 15,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 85,
+                "StressIndex": 89,
+                "ActivityIntensity": 315,
+                "CaloricExpenditure": 30,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241025_1820.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        },
+        {
+            "SeqNum": 1000017,
+            "TimeStamp": "2024-10-25T18:30",
+            "EM_Sensor": {
+                "DataType": "EM_Sensor",
+                "Temperature": 20.0,
+                "Humidity": 62.0,
+                "Illuminance": 0.0,
+                "Activity_IR": 0,
+                "CO2": 419.0,
+                "TVOC": 32.0,
+                "Label": "외출"
+            },
+            "SM_Sensor": {
+                "DataType": "SM_Sensor",
+                "HeartRate": 59,
+                "BreathRate": 15,
+                "SPO2": 98,
+                "SkinTemperature": 0.0,
+                "SleepPhase": 9,
+                "SleepScore": 0,
+                "WalkingSteps": 21,
+                "StressIndex": 0,
+                "ActivityIntensity": 577,
+                "CaloricExpenditure": 8,
+                "Label": "일상"
+            },
+            "IR_Sensor": {
+                "DataType": "IR_Sensor",
+                "Image_IR": "IR_A0006_20241025_1830.png",
+                "Caption": "객체가 없음"
+            },
+            "ER_Sensor": {
+                "DataType": "ER_Sensor",
+                "Button": 0,
+                "Shout": 0,
+                "Label": "일상"
+            },
+            "Counseling": {
+                "DataType": "Counseling",
+                "Counseling": "특이사항 없음.",
+                "Memo": "특이사항 없음.",
+                "Information": "취침 습관은, 22~5시경, TV 보시다 주무심, 집에서 규칙적 식사하심, 외출이 정기적으로 있고 외부 활동 많으심"
+            },
+            "Total_Labeling": {
+                "DataType": "Total_Labeling",
+                "Estimation": "외출",
+                "Reason": "특이사항 없음으로 일상 상황으로 판단"
+            }
+        }
+    ]
+}
